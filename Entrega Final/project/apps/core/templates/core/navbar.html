@@ -1,0 +1,18 @@
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+        <a class="navbar-brand" href="#!">Rutas claras</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-4 mb-lg-2">
+                <div class = "d-flex justify-content-center">
+                    <a href="{% url "admin:index" %}" class="text-white w-40">ADMIN</a></button>
+                </div>
+                <li class=""><button><a href="{% url "Hoteles_list" %}">Hoteles</a></button></li>
+                <button><a href="{% url "Destinos_list" %}" >Destinos</a></button>
+                <li class="nav-item"></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

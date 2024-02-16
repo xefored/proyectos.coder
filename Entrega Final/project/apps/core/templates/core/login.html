@@ -1,0 +1,26 @@
+{% extends "core/base.html" %}
+
+
+{% block title %}
+
+      Login
+    
+       
+{% endblock title %}
+
+{% block content_title %}
+    Login
+
+{% endblock content_title %}
+
+{% block contenido %}
+
+   <form method ="post">
+       {% csrf_token %}
+       {{ form.as_p }}
+       <input type="hidden" name="next" value="{% url "core:index" %}">
+       <button type="submit" class= "btn btn-primary">Iniciar Sesiòn</button>
+       <a href= "{% url "core:index" %}" class "btn btn-secondary">Cancelar</a>
+   </form>    
+
+{% endblock contenido %}

@@ -1,0 +1,17 @@
+{% extends "core/base.html" %}
+
+{% block contenido %}
+
+    <h1> Bienvenido a Rutas claras </h1>
+
+    <button><a href="{% url "Hoteles_list" %}">Hoteles</a></button>
+    <button><a href="{% url "Hoteles_form" %}">Nuevo Hotel</a></button>
+    <button><a href="{% url "Destinos_list" %}">Destinos</a></button>
+       
+{% endblock contenido %}
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+{% extends "core/base.html" %}
+
+
+{% block contenido %}
+
+    {% for hotel in hoteles %}
+       <ul>
+            <li>
+                {{hotel.nombre}}
+                {{hotel.email}}
+                -Precio Final ${{hotel.precio}}(3 Noches y 2 Dias)
+                -{{hotel.descripcion}}
+
+            </li>
+        </ul>    
+    {% endfor %}
+
+    <button><a href="{% url "index" %}">Inicio</a></button>
+       
+{% endblock contenido %}

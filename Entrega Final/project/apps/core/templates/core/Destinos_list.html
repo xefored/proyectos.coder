@@ -1,0 +1,18 @@
+{% extends "core/base.html" %}
+
+
+{% block contenido %}
+
+    {% for destino in destinos %}
+       <ul>
+            <li>
+                {{destino.nombre}}
+                -Precio final ${{destino.precio}}(Ida y Vuelta)
+
+            </li>
+        </ul>    
+    {% endfor %}
+
+    <button><a href="{% url "index" %}">Inicio</a></button>
+       
+{% endblock contenido %}
